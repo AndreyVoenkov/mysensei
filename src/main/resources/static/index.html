@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Helper</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Interview Helper</h1>
+    <div id="video-container">
+        <div class="video-wrapper">
+            <video id="local-video" autoplay muted></video>
+            <div class="video-label">You</div>
+        </div>
+        <div class="video-wrapper">
+            <video id="remote-video" autoplay></video>
+            <div class="video-label">Interviewer</div>
+        </div>
+    </div>
+    <div id="video-controls">
+        <button id="start-video">Start Video</button>
+        <button id="stop-video">Stop Video</button>
+        <button id="start-recognition">Start Recognition</button>
+        <div id="status-indicator">Status: Disconnected</div>
+    </div>
+    <div id="chat-box" class="chat-box"></div>
+    <div class="input-box">
+        <input type="text" id="question-input" placeholder="Enter your question">
+        <button onclick="sendQuestion()">Send</button>
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
